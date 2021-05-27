@@ -32,6 +32,12 @@ class tmdb_mvvm_pureUITests: XCTestCase {
         app.secureTextFields["Your password"].tap()
         app.secureTextFields["Your password"].typeText("test")
         app.buttons["Sign in"].tap()
+        
+        XCTAssertTrue(app.tables/*@START_MENU_TOKEN@*/.staticTexts["Popular movies"]/*[[".cells.staticTexts[\"Popular movies\"]",".staticTexts[\"Popular movies\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.exists)
+        
+        
+        //popularMoviesStaticText.tap()
+        
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
