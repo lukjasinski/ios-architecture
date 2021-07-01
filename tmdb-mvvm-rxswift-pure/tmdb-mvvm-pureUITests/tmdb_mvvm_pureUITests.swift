@@ -12,7 +12,7 @@ class tmdb_mvvm_pureUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-
+      
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
@@ -26,13 +26,10 @@ class tmdb_mvvm_pureUITests: XCTestCase {
     func testLogin() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
+        // var loginPage = LoginPage(application: app)
         app.launch()
-        app.textFields["Your username"].tap()
-        app.textFields["Your username"].typeText("iostest")
-        app.secureTextFields["Your password"].tap()
-        app.secureTextFields["Your password"].typeText("test")
-        app.keyboards.buttons["Return"].tap()
-        app.buttons["Sign in"].tap()
+        
+        
         
         XCTAssertTrue(app.tabBars.buttons["Discover"].isHittable)
         
