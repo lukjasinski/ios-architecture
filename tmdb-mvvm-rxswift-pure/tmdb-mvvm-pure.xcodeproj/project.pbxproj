@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23366E6B2701B38700937749 /* LoginTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23366E6A2701B38700937749 /* LoginTestSuite.swift */; };
 		65201314265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65201313265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift */; };
 		65CFE65C2689B47400E42980 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CFE65B2689B47400E42980 /* LoginPage.swift */; };
 		65EF007A26835861008ECF7A /* BaseAppPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF007926835861008ECF7A /* BaseAppPage.swift */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		049324FB5628212F25B3D1CA /* Pods-tmdb-mvvm-pureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-mvvm-pureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tmdb-mvvm-pureTests/Pods-tmdb-mvvm-pureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23366E6A2701B38700937749 /* LoginTestSuite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTestSuite.swift; sourceTree = "<group>"; };
 		39A5DE6D937D06E89D25FB0D /* Pods_tmdb_mvvm_pure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmdb_mvvm_pure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4DB2025D7B2B2A18A2BEDD /* Pods_tmdb_mvvm_pureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmdb_mvvm_pureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65201311265F7A8900AF6EB2 /* tmdb-mvvm-pureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tmdb-mvvm-pureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,9 +162,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23366E692701A93100937749 /* TestSuites */ = {
+			isa = PBXGroup;
+			children = (
+				23366E6A2701B38700937749 /* LoginTestSuite.swift */,
+			);
+			path = TestSuites;
+			sourceTree = "<group>";
+		};
 		65201312265F7A8900AF6EB2 /* tmdb-mvvm-pureUITests */ = {
 			isa = PBXGroup;
 			children = (
+				23366E692701A93100937749 /* TestSuites */,
 				65C857E72664D2F600B6C866 /* PageObjects */,
 				65201313265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift */,
 				6520132A265F7E4200AF6EB2 /* XCUITestHelpers */,
@@ -605,6 +616,7 @@
 			files = (
 				65CFE65C2689B47400E42980 /* LoginPage.swift in Sources */,
 				65EF007A26835861008ECF7A /* BaseAppPage.swift in Sources */,
+				23366E6B2701B38700937749 /* LoginTestSuite.swift in Sources */,
 				65201314265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -860,7 +872,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tailec.tmdb-mvvm-pure";
+				PRODUCT_BUNDLE_IDENTIFIER = "tailec.tmdb-mvvm-pure-sdas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -878,7 +890,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tailec.tmdb-mvvm-pure";
+				PRODUCT_BUNDLE_IDENTIFIER = "tailec.tmdb-mvvm-pure-sdas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
