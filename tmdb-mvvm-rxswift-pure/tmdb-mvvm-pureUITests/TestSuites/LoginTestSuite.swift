@@ -160,6 +160,7 @@ class LoginTestSuite: XCTestCase {
         let passwordSecureTextField = app.secureTextFields["Your password"].firstMatch
         let signInButton = app.buttons["Sign in"].firstMatch
         let returnKey = app.keyboards.buttons["Return"].firstMatch
+        let searchButton = app.buttons["Search"].firstMatch
         
         // type valid username
         userNameTextField.tap()
@@ -173,8 +174,6 @@ class LoginTestSuite: XCTestCase {
         signInButton.tap()
 
         // Check if user is logged in
-        //XCTAssertTrue(userNameTextField.isHittable, "Username field is not visible.")
-        //XCTAssertTrue(passwordSecureTextField.isHittable, "Password field is not visible.")
-        //XCTAssertTrue(signInButton.isHittable && signInButton.isEnabled, "Sign In button is not visible or is disabled.")
+        XCTAssertTrue(searchButton.isHittable && searchButton.isEnabled, "Search button is not visible or is disabled.")
     }
 }
