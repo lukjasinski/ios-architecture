@@ -173,7 +173,10 @@ class LoginTestSuite: XCTestCase {
         // tap Sign In
         signInButton.tap()
 
-        // Check if user is logged in
-        XCTAssertTrue(searchButton.isHittable && searchButton.isEnabled, "Search button is not visible or is disabled.")
+        // Check if the user is logged in
+        while (!searchButton.isHittable && !searchButton.isEnabled) {
+            XCTAssertTrue(searchButton.isHittable && searchButton.isEnabled, "Search button is not visible or is disabled.")
+        }
+        
     }
 }
