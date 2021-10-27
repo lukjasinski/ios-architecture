@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		23366E6B2701B38700937749 /* LoginTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23366E6A2701B38700937749 /* LoginTestSuite.swift */; };
 		65201314265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65201313265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift */; };
-		65CFE65C2689B47400E42980 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CFE65B2689B47400E42980 /* LoginPage.swift */; };
-		65EF007A26835861008ECF7A /* BaseAppPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF007926835861008ECF7A /* BaseAppPage.swift */; };
 		6F6C678413B31BCACD1F8878 /* Pods_tmdb_mvvm_pureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4DB2025D7B2B2A18A2BEDD /* Pods_tmdb_mvvm_pureTests.framework */; };
 		72AD9347803E386462C24FCA /* Pods_tmdb_mvvm_pure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A5DE6D937D06E89D25FB0D /* Pods_tmdb_mvvm_pure.framework */; };
 		D202E3A421FE58C300027462 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202E3A321FE58C300027462 /* ActivityIndicator.swift */; };
@@ -82,8 +80,6 @@
 		65201311265F7A8900AF6EB2 /* tmdb-mvvm-pureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tmdb-mvvm-pureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65201313265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdb_mvvm_pureUITests.swift; sourceTree = "<group>"; };
 		65201315265F7A8900AF6EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65CFE65B2689B47400E42980 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
-		65EF007926835861008ECF7A /* BaseAppPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppPage.swift; sourceTree = "<group>"; };
 		B7324DB239DB439D92577D7D /* Pods-tmdb-mvvm-pureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-mvvm-pureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tmdb-mvvm-pureTests/Pods-tmdb-mvvm-pureTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6ACB6AB88B23D58A9DD0052 /* Pods-tmdb-mvvm-pure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-mvvm-pure.release.xcconfig"; path = "Pods/Target Support Files/Pods-tmdb-mvvm-pure/Pods-tmdb-mvvm-pure.release.xcconfig"; sourceTree = "<group>"; };
 		C88C0EFCD3471672DD9875F0 /* Pods-tmdb-mvvm-pure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-mvvm-pure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tmdb-mvvm-pure/Pods-tmdb-mvvm-pure.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				65EF00782683583E008ECF7A /* Pages */,
-				65EF007926835861008ECF7A /* BaseAppPage.swift */,
 			);
 			path = PageObjects;
 			sourceTree = "<group>";
@@ -201,7 +196,6 @@
 		65EF00782683583E008ECF7A /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				65CFE65B2689B47400E42980 /* LoginPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -614,8 +608,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65CFE65C2689B47400E42980 /* LoginPage.swift in Sources */,
-				65EF007A26835861008ECF7A /* BaseAppPage.swift in Sources */,
 				23366E6B2701B38700937749 /* LoginTestSuite.swift in Sources */,
 				65201314265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift in Sources */,
 			);
