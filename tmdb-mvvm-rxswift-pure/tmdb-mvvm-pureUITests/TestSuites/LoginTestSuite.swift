@@ -17,6 +17,18 @@ class LoginTestSuite: XCTestCase {
     override func tearDownWithError() throws {
     }
 
+    private func waitFor(element: XCUIElement) {
+        var timeInterval = 10
+        while (!element.isHittable) {
+            sleep(1)
+            timeInterval -= 1
+            print("Wartosc timeInterval = \(timeInterval)")
+            if timeInterval <= 0 {
+                break
+            }
+        }
+    }
+    
     func testLoginFailsWhenUsernameIsInvalid() {
         // TEST DATA
         let invalidUsername = "InvalidUsername"
@@ -172,11 +184,11 @@ class LoginTestSuite: XCTestCase {
         returnKey.tap()
         // tap Sign In
         signInButton.tap()
-
-        // Check if the user is logged in
-        while (!searchButton.isHittable && !searchButton.isEnabled) {
-            XCTAssertTrue(searchButton.isHittable && searchButton.isEnabled, "Search button is not visible or is disabled.")
-        }
         
+        
+        // Check if the user is logged in
+        waitFor(element: searchButton)
+        
+        XCTAssertTrue(searchButton.isHittable, "Search button is not visible or is disabled.")
     }
 }
