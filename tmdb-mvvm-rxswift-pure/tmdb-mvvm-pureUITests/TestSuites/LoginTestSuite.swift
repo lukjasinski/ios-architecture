@@ -9,9 +9,13 @@
 import XCTest
 
 class LoginTestSuite: XCTestCase {
+    var app = XCUIApplication()
+    lazy var loginScreen = LoginScreen(application: app)
 
     override func setUpWithError() throws {
         continueAfterFailure = false
+        
+        app.launch()
     }
 
     override func tearDownWithError() throws {
@@ -33,14 +37,9 @@ class LoginTestSuite: XCTestCase {
         // TEST DATA
         let invalidUsername = "InvalidUsername"
         let validPassword = "test"
+        
         let defaultTimeout: TimeInterval = 15
-        
-        // Lunch the App
-        let app = XCUIApplication()
-        app.launch()
-        
         // UI Elements
-        let userNameTextField = app.textFields["Your username"].firstMatch
         let passwordSecureTextField = app.secureTextFields["Your password"].firstMatch
         let signInButton = app.buttons["Sign in"].firstMatch
         let returnKey = app.keyboards.buttons["Return"].firstMatch
@@ -49,8 +48,7 @@ class LoginTestSuite: XCTestCase {
         
         
         // type invalid username
-        userNameTextField.tap()
-        userNameTextField.typeText(invalidUsername)
+        loginScreen.type(username: invalidUsername)
         // type password
         passwordSecureTextField.tap()
         passwordSecureTextField.typeText(validPassword)
@@ -62,7 +60,7 @@ class LoginTestSuite: XCTestCase {
         // Check error message is displayed and user remains on login screen
         XCTAssertTrue(errorAlert.waitForExistence(timeout: defaultTimeout), "Error message is not displayed after \(defaultTimeout) seconds for ivalid username.")
         dismissErrorAlertButton.tap()
-        XCTAssertTrue(userNameTextField.isHittable, "Username field is not visible.")
+        XCTAssertTrue(loginScreen.isUsernameFieldVisible(), "Username field is not visible.")
         XCTAssertTrue(passwordSecureTextField.isHittable, "Password field is not visible.")
         XCTAssertTrue(signInButton.isHittable && signInButton.isEnabled, "Sign In button is not visible or is disabled.")
     }
@@ -72,13 +70,8 @@ class LoginTestSuite: XCTestCase {
         let validUsername = "iostest"
         let invalidPassword = "InvalidPassword"
         let defaultTimeout: TimeInterval = 15
-        
-        // Launch the App
-        let app = XCUIApplication()
-        app.launch()
             
         // UI Elements
-        let userNameTextField = app.textFields["Your username"].firstMatch
         let passwordSecureTextField = app.secureTextFields["Your password"].firstMatch
         let signInButton = app.buttons["Sign in"].firstMatch
         let returnKey = app.keyboards.buttons["Return"].firstMatch
@@ -86,8 +79,7 @@ class LoginTestSuite: XCTestCase {
         let dismissErrorAlertButton = errorAlert.buttons["OK"]
         
         // type valid username
-        userNameTextField.tap()
-        userNameTextField.typeText(validUsername)
+        loginScreen.type(username: validUsername)
         // type invalid password
         passwordSecureTextField.tap()
         passwordSecureTextField.typeText(invalidPassword)
@@ -99,7 +91,7 @@ class LoginTestSuite: XCTestCase {
         // Check error message is displayed and user remains on login screen
         XCTAssertTrue(errorAlert.waitForExistence(timeout: defaultTimeout), "Error message is not displayed after \(defaultTimeout) seconds for invalid password.")
         dismissErrorAlertButton.tap()
-        XCTAssertTrue(userNameTextField.isHittable, "Username field is not visible.")
+        XCTAssertTrue(loginScreen.isUsernameFieldVisible(), "Username field is not visible.")
         XCTAssertTrue(passwordSecureTextField.isHittable, "Password field is not visible.")
         XCTAssertTrue(signInButton.isHittable && signInButton.isEnabled, "Sign In button is not visible or is disabled.")
         
@@ -109,24 +101,18 @@ class LoginTestSuite: XCTestCase {
         // TEST DATA
         let validUsername = "iostest"
             
-        // Launch the App
-        let app = XCUIApplication()
-        app.launch()
-            
         // UI Elements
-        let userNameTextField = app.textFields["Your username"].firstMatch
         let passwordSecureTextField = app.secureTextFields["Your password"].firstMatch
         let signInButton = app.buttons["Sign in"].firstMatch
         let returnKey = app.keyboards.buttons["Return"].firstMatch
             
         // type valid username
-        userNameTextField.tap()
-        userNameTextField.typeText(validUsername)
+        loginScreen.type(username: validUsername)
         // dismiss keyboard
         returnKey.tap()
             
         // Check if user remains on login screen and Sign in button is NOT enabled
-        XCTAssertTrue(userNameTextField.isHittable, "Username field is not visible.")
+        XCTAssertTrue(loginScreen.isUsernameFieldVisible(), "Username field is not visible.")
         XCTAssertTrue(passwordSecureTextField.isHittable, "Password field is not visible.")
         XCTAssertTrue(signInButton.isHittable && !signInButton.isEnabled, "Sign In button is not visible or is disabled.")
             
@@ -136,12 +122,7 @@ class LoginTestSuite: XCTestCase {
         // TEST DATA
         let validPassword = "test"
             
-        // Launch the App
-        let app = XCUIApplication()
-        app.launch()
-            
         // UI Elements
-        let userNameTextField = app.textFields["Your username"].firstMatch
         let passwordSecureTextField = app.secureTextFields["Your password"].firstMatch
         let signInButton = app.buttons["Sign in"].firstMatch
         let returnKey = app.keyboards.buttons["Return"].firstMatch
@@ -153,7 +134,7 @@ class LoginTestSuite: XCTestCase {
         returnKey.tap()
             
         // Check if user remains on login screen and Sign in button is NOT enabled
-        XCTAssertTrue(userNameTextField.isHittable, "Username field is not visible.")
+        XCTAssertTrue(loginScreen.isUsernameFieldVisible(), "Username field is not visible.")
         XCTAssertTrue(passwordSecureTextField.isHittable, "Password field is not visible.")
         XCTAssertTrue(signInButton.isHittable && !signInButton.isEnabled, "Sign In button is not visible or is disabled.")
         }
@@ -163,20 +144,14 @@ class LoginTestSuite: XCTestCase {
         let validUsername = "iostest"
         let validPassword = "test"
         
-        // Lunch the App
-        let app = XCUIApplication()
-        app.launch()
-        
         // UI Elements
-        let userNameTextField = app.textFields["Your username"].firstMatch
         let passwordSecureTextField = app.secureTextFields["Your password"].firstMatch
         let signInButton = app.buttons["Sign in"].firstMatch
         let returnKey = app.keyboards.buttons["Return"].firstMatch
         let searchButton = app.buttons["Search"].firstMatch
         
         // type valid username
-        userNameTextField.tap()
-        userNameTextField.typeText(validUsername)
+        loginScreen.type(username: validUsername)
         // type password
         passwordSecureTextField.tap()
         passwordSecureTextField.typeText(validPassword)
