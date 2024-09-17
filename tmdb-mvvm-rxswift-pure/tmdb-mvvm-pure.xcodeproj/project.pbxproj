@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23366E6B2701B38700937749 /* LoginTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23366E6A2701B38700937749 /* LoginTestSuite.swift */; };
+		2391B215273149DD00386A35 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391B214273149DD00386A35 /* LoginScreen.swift */; };
+		65201314265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65201313265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift */; };
 		6F6C678413B31BCACD1F8878 /* Pods_tmdb_mvvm_pureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4DB2025D7B2B2A18A2BEDD /* Pods_tmdb_mvvm_pureTests.framework */; };
 		72AD9347803E386462C24FCA /* Pods_tmdb_mvvm_pure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A5DE6D937D06E89D25FB0D /* Pods_tmdb_mvvm_pure.framework */; };
 		D202E3A421FE58C300027462 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202E3A321FE58C300027462 /* ActivityIndicator.swift */; };
@@ -54,6 +57,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		65201316265F7A8900AF6EB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D27F823821FE493C0071513F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D27F823F21FE493C0071513F;
+			remoteInfo = "tmdb-mvvm-pure";
+		};
 		D27F825521FE493D0071513F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D27F823821FE493C0071513F /* Project object */;
@@ -65,8 +75,13 @@
 
 /* Begin PBXFileReference section */
 		049324FB5628212F25B3D1CA /* Pods-tmdb-mvvm-pureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-mvvm-pureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tmdb-mvvm-pureTests/Pods-tmdb-mvvm-pureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23366E6A2701B38700937749 /* LoginTestSuite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTestSuite.swift; sourceTree = "<group>"; };
+		2391B214273149DD00386A35 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		39A5DE6D937D06E89D25FB0D /* Pods_tmdb_mvvm_pure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmdb_mvvm_pure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4DB2025D7B2B2A18A2BEDD /* Pods_tmdb_mvvm_pureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmdb_mvvm_pureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65201311265F7A8900AF6EB2 /* tmdb-mvvm-pureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tmdb-mvvm-pureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65201313265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdb_mvvm_pureUITests.swift; sourceTree = "<group>"; };
+		65201315265F7A8900AF6EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7324DB239DB439D92577D7D /* Pods-tmdb-mvvm-pureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-mvvm-pureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tmdb-mvvm-pureTests/Pods-tmdb-mvvm-pureTests.release.xcconfig"; sourceTree = "<group>"; };
 		C6ACB6AB88B23D58A9DD0052 /* Pods-tmdb-mvvm-pure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-mvvm-pure.release.xcconfig"; path = "Pods/Target Support Files/Pods-tmdb-mvvm-pure/Pods-tmdb-mvvm-pure.release.xcconfig"; sourceTree = "<group>"; };
 		C88C0EFCD3471672DD9875F0 /* Pods-tmdb-mvvm-pure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmdb-mvvm-pure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tmdb-mvvm-pure/Pods-tmdb-mvvm-pure.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +134,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6520130E265F7A8900AF6EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D27F823D21FE493C0071513F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +160,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23366E692701A93100937749 /* TestSuites */ = {
+			isa = PBXGroup;
+			children = (
+				23366E6A2701B38700937749 /* LoginTestSuite.swift */,
+			);
+			path = TestSuites;
+			sourceTree = "<group>";
+		};
+		2391B213273149C700386A35 /* ScreenObjects */ = {
+			isa = PBXGroup;
+			children = (
+				2391B214273149DD00386A35 /* LoginScreen.swift */,
+			);
+			path = ScreenObjects;
+			sourceTree = "<group>";
+		};
+		65201312265F7A8900AF6EB2 /* tmdb-mvvm-pureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2391B213273149C700386A35 /* ScreenObjects */,
+				23366E692701A93100937749 /* TestSuites */,
+				65201313265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift */,
+				65201315265F7A8900AF6EB2 /* Info.plist */,
+			);
+			path = "tmdb-mvvm-pureUITests";
+			sourceTree = "<group>";
+		};
 		B35FC69B0CEA0749EA6F39F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +307,7 @@
 			children = (
 				D27F824221FE493C0071513F /* tmdb-mvvm-pure */,
 				D27F825721FE493D0071513F /* tmdb-mvvm-pureTests */,
+				65201312265F7A8900AF6EB2 /* tmdb-mvvm-pureUITests */,
 				D27F824121FE493C0071513F /* Products */,
 				FA13A2594665FC00BD98B8E9 /* Pods */,
 				B35FC69B0CEA0749EA6F39F8 /* Frameworks */,
@@ -269,6 +319,7 @@
 			children = (
 				D27F824021FE493C0071513F /* tmdb-mvvm-pure.app */,
 				D27F825421FE493D0071513F /* tmdb-mvvm-pureTests.xctest */,
+				65201311265F7A8900AF6EB2 /* tmdb-mvvm-pureUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -351,6 +402,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		65201310265F7A8900AF6EB2 /* tmdb-mvvm-pureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65201318265F7A8900AF6EB2 /* Build configuration list for PBXNativeTarget "tmdb-mvvm-pureUITests" */;
+			buildPhases = (
+				6520130D265F7A8900AF6EB2 /* Sources */,
+				6520130E265F7A8900AF6EB2 /* Frameworks */,
+				6520130F265F7A8900AF6EB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65201317265F7A8900AF6EB2 /* PBXTargetDependency */,
+			);
+			name = "tmdb-mvvm-pureUITests";
+			productName = "tmdb-mvvm-pureUITests";
+			productReference = 65201311265F7A8900AF6EB2 /* tmdb-mvvm-pureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		D27F823F21FE493C0071513F /* tmdb-mvvm-pure */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D27F825D21FE493D0071513F /* Build configuration list for PBXNativeTarget "tmdb-mvvm-pure" */;
@@ -395,10 +464,14 @@
 		D27F823821FE493C0071513F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = tailec;
 				TargetAttributes = {
+					65201310265F7A8900AF6EB2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D27F823F21FE493C0071513F;
+					};
 					D27F823F21FE493C0071513F = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -423,11 +496,19 @@
 			targets = (
 				D27F823F21FE493C0071513F /* tmdb-mvvm-pure */,
 				D27F825321FE493D0071513F /* tmdb-mvvm-pureTests */,
+				65201310265F7A8900AF6EB2 /* tmdb-mvvm-pureUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6520130F265F7A8900AF6EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D27F823E21FE493C0071513F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,28 +576,31 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-tmdb-mvvm-pure/Pods-tmdb-mvvm-pure-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tmdb-mvvm-pure/Pods-tmdb-mvvm-pure-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tmdb-mvvm-pure/Pods-tmdb-mvvm-pure-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tmdb-mvvm-pure/Pods-tmdb-mvvm-pure-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tmdb-mvvm-pure/Pods-tmdb-mvvm-pure-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6520130D265F7A8900AF6EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23366E6B2701B38700937749 /* LoginTestSuite.swift in Sources */,
+				65201314265F7A8900AF6EB2 /* tmdb_mvvm_pureUITests.swift in Sources */,
+				2391B215273149DD00386A35 /* LoginScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D27F823C21FE493C0071513F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -567,6 +651,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		65201317265F7A8900AF6EB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D27F823F21FE493C0071513F /* tmdb-mvvm-pure */;
+			targetProxy = 65201316265F7A8900AF6EB2 /* PBXContainerItemProxy */;
+		};
 		D27F825621FE493D0071513F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D27F823F21FE493C0071513F /* tmdb-mvvm-pure */;
@@ -594,6 +683,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		65201319265F7A8900AF6EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V64WY8Q7UY;
+				INFOPLIST_FILE = "tmdb-mvvm-pureUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pgs.tmdb-mvvm-pureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tmdb-mvvm-pure";
+			};
+			name = Debug;
+		};
+		6520131A265F7A8900AF6EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V64WY8Q7UY;
+				INFOPLIST_FILE = "tmdb-mvvm-pureUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pgs.tmdb-mvvm-pureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tmdb-mvvm-pure";
+			};
+			name = Release;
+		};
 		D27F825B21FE493D0071513F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -721,7 +852,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tailec.tmdb-mvvm-pure";
+				PRODUCT_BUNDLE_IDENTIFIER = "tailec.tmdb-mvvm-pure-sdas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -739,7 +870,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "tailec.tmdb-mvvm-pure";
+				PRODUCT_BUNDLE_IDENTIFIER = "tailec.tmdb-mvvm-pure-sdas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -791,6 +922,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		65201318265F7A8900AF6EB2 /* Build configuration list for PBXNativeTarget "tmdb-mvvm-pureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65201319265F7A8900AF6EB2 /* Debug */,
+				6520131A265F7A8900AF6EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D27F823B21FE493C0071513F /* Build configuration list for PBXProject "tmdb-mvvm-pure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
